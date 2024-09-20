@@ -10,3 +10,7 @@ Part 2:
 
 Part 3:
 ![image](https://github.com/user-attachments/assets/cddea1f5-366a-4b5e-bfa9-27c15ab3975e)
+
+Part 4:
+![image](https://github.com/user-attachments/assets/d436fc76-a570-47e2-995b-633a68409ebf)
+
