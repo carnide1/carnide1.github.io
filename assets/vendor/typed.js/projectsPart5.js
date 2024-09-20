@@ -15,13 +15,18 @@ const projects = [
         date: '2024-25-04',
         image: '/assets/img/waynavpro.png',
         githubLink: 'https://github.com/carnide1',
-    }, 
+    }
 
 ];
 
 
 //sort the projects based on their date
 projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+//use getelement id to find the projects section row element 
+const projectsSection = document.getElementById('projects-section');
+//get the element of the button
+const loadButton = document.getElementById('load-more');
 
 function createhtml(project) {
     return `
@@ -50,16 +55,9 @@ function createhtml(project) {
 }
 
 
-
-
-//use getelement id to find the projects section row element 
-const projectsSection = document.getElementById('projects-section');
-
 //add the html text from the createhtml function using innerhtml
 projectsSection.innerHTML = createhtml(projects[0]);
 
-//get the element of the button
-const loadButton = document.getElementById('load-more');
 
 //function to load the projects by looping through the rest of the projects array
 function loadMoreProjects(){
@@ -71,4 +69,4 @@ function loadMoreProjects(){
     loadButton.style.display = 'none';
 }
 
-loadMore.addEventListener('click', loadMoreProjects);
+loadButton.addEventListener('click', loadMoreProjects);
