@@ -61,11 +61,10 @@ projectsSection.innerHTML = createhtml(projects[0]);
 
 //function to load the projects by looping through the rest of the projects array
 function loadMoreProjects(){
-    for(let projectNum = 1; projectNum < projects.size(); ++projectNum){
+    for(let projectNum = 1; projectNum < projects.size(); projectNum++){
         projectsSection.innerHTML += createhtml(projects[projectNum]);
-        
     }
-
+    
     loadButton.style.display = 'none';
 }
 
