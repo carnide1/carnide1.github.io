@@ -15,6 +15,14 @@ const projects = [
         date: '2024-25-04',
         image: '/assets/img/waynavpro.png',
         githubLink: 'https://github.com/carnide1',
+    }, {
+      title: 'Legend of Zelda - The Eagle',
+      description: 'Recreated the dungeon from the classic game',
+      tools: ['C', 'Assembly'],
+      text: 'Desgined the background, the wall and object boundaries, enemy spawn positions, item drops, and the character movement, attack, health, and inventory.',
+      date: '2024-01-04',
+      image: '/assets/img/LoZbackground.png',
+      githubLink: 'https://github.com/simonlouis15/Legend-of-Zelda',
     }
 
 ];
